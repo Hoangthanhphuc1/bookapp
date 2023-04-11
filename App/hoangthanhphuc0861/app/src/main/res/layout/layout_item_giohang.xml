@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rounded_border_black222"
+    android:paddingBottom="2dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hinhsachgiohang"
+        android:layout_marginStart="15dp"
+
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        />
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="400dp"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tensachgiohang"
+            android:text="aaaaaaaaaaa"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_width="230dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:id="@+id/giasachgiohang"
+            android:text="50.000đ"
+            android:textSize="15dp"
+            android:textColor="#FF0000"
+            android:layout_width="230dp"
+            android:layout_height="20dp"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:background="#CDCDCD"
+            android:layout_height="20dp">
+
+            <ImageView
+                android:id="@+id/soluong_tru"
+                android:background="@drawable/ic_baseline_remove_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+            <TextView
+                android:id="@+id/soluong_giohang"
+                android:text="1"
+                android:background="#FFFFFF"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <ImageView
+                android:id="@+id/soluong_cong"
+                android:background="@drawable/ic_baseline_add_24"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
