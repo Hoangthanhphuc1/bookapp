@@ -73,53 +73,53 @@
         android:background="#E8E6E6"
         />
 
-                <LinearLayout
-                android:id="@+id/layout1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+    <LinearLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
 
-                >
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:id="@+id/textView2"
-                            android:layout_width="200dp"
-                            android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="Tổng tiền: "
-                            android:textColor="#FF0000"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
+    >
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="Tổng tiền: "
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
 
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/rvGiohang"
-                            app:layout_constraintVertical_bias="0.063"
-                            tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvGiohang"
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="MissingConstraints" />
 
-                        <TextView
-                            android:id="@+id/tienthanhtoan"
-                            android:layout_width="200dp"
-                            android:layout_height="50dp"
-                            android:layout_weight="1"
-                            android:text="0đ "
-                            android:textAlignment="center"
-                            android:textColor="#FF0000"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
+    <TextView
+        android:id="@+id/tienthanhtoan"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:text="0đ "
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
 
-                            app:layout_constraintStart_toEndOf="@+id/textView2"
-                            app:layout_constraintTop_toBottomOf="@+id/rvGiohang"
-                            app:layout_constraintVertical_bias="0.075"
-                            tools:ignore="MissingConstraints" />
-                    </LinearLayout>
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/rvGiohang"
+        app:layout_constraintVertical_bias="0.075"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>
 
-            </LinearLayout>
+</LinearLayout>
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/muahang"
         android:layout_width="350dp"

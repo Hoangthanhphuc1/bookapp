@@ -42,8 +42,8 @@ public class MainActivity_ChitietSach extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_chitiet_sach);
 
-//        tenchitiet = findViewById(R.id.tenchitiet);
-//        giachitiet = findViewById(R.id.giachitiet);
+        tenchitiet = findViewById(R.id.tenchitiet);
+        giachitiet = findViewById(R.id.giachitiet);
         imgchitiet = findViewById(R.id.imgchitiet);
         spinner = findViewById(R.id.spinner);
         btnthem = findViewById(R.id.btnthem);
