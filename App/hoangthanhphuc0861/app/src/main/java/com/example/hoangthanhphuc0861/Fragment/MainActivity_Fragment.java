@@ -68,8 +68,19 @@ public class MainActivity_Fragment extends AppCompatActivity {
                         openSearchFragment();
                         bottom_navigation.getMenu().findItem(R.id.btnsearch).setChecked(true);
                         break;
+                    case R.id.btnaccount:
+                        openAccountFragment();
+                        bottom_navigation.getMenu().findItem(R.id.btnaccount).setChecked(true);
+                        break;
                 }
                 return true;
+            }
+
+            private void openAccountFragment() {
+                if (currentFragment != R.id.btnaccount) {
+                    OpenFragment(new AccountFragment());
+                    currentFragment = fragment_Account;
+                }
             }
 
             private void openSearchFragment() {

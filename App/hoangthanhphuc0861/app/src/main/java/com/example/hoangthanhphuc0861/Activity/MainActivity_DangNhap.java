@@ -19,6 +19,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.hoangthanhphuc0861.Fragment.AccountFragment;
 import com.example.hoangthanhphuc0861.R;
 import com.example.hoangthanhphuc0861.model.SERVER;
 
@@ -80,7 +81,7 @@ private void dangnhap() {
                     if (response.trim().equals("Đăng nhập thành công!")) {
                         // Nếu đăng nhập thành công, chuyển đến activity tiếp theo
                         Toast.makeText(MainActivity_DangNhap.this, "Dang nhap thanh cong", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity_DangNhap.this, TrangChu_Activity.class);
+                        Intent intent = new Intent(MainActivity_DangNhap.this, AccountFragment.class);
                         startActivity(intent);
                         finish();
                     }

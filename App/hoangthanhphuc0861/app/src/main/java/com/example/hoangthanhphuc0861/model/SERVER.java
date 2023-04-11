@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SERVER {
 
-    public static String serverip ="http://192.168.201.238/";
+    public static String serverip ="http://192.168.148.238/";
     public static String nhomsach =serverip+"sqlsachonline/nhomsach.php";
 
     public static String sach =serverip+"sqlsachonline/sach.php";

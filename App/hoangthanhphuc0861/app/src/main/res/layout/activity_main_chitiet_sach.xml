@@ -7,6 +7,8 @@
     android:orientation="vertical"
     tools:context=".Activity.MainActivity_ChitietSach">
 
+
+
    <androidx.appcompat.widget.Toolbar
        android:id="@+id/androidxtoolbar"
        android:layout_width="match_parent"
@@ -53,69 +55,87 @@
 
    </androidx.appcompat.widget.Toolbar>
 
-   <LinearLayout
-       android:background="#E8E6E6"
-       android:layout_marginTop="5dp"
+   <RelativeLayout
        android:layout_width="match_parent"
-       android:orientation="vertical"
-       android:layout_height="300dp">
+       android:layout_height="match_parent">
 
-      <ImageView
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:layout_alignParentTop="true"
+          android:layout_marginTop="5dp"
+          android:background="#E8E6E6"
+          android:orientation="vertical">
 
-          android:id="@+id/imgchitiet"
+         <ImageView
+
+             android:id="@+id/imgchitiet"
+             android:layout_width="200dp"
+             android:layout_height="280dp"
+
+             android:layout_gravity="center" />
+      </LinearLayout>
+
+<!--      <TextView-->
+<!--          android:id="@+id/tenchitiet"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="70dp"-->
+<!--          android:layout_below="@+id/null"-->
+<!--          android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"-->
+<!--          android:textColor="@color/black"-->
+<!--          android:textSize="25dp"-->
+<!--          tools:ignore="UnknownId" />-->
+
+<!--      <TextView-->
+<!--          android:id="@+id/giachitiet"-->
+<!--          android:text="50.,000"-->
+<!--          android:textSize="25dp"-->
+<!--          android:textStyle="bold"-->
+<!--          android:textColor="#FF0000"-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:layout_height="70dp"/>-->
+
+      <LinearLayout
           android:layout_width="200dp"
-          android:layout_height="280dp"
+          android:layout_height="60dp"
+          android:layout_above="@+id/btnthem"
+          android:layout_marginBottom="493dp"
+          android:orientation="horizontal">
 
-          android:layout_gravity="center"
-          />
-   </LinearLayout>
+         <TextView
+             android:layout_width="100dp"
+             android:layout_height="60dp"
+             android:text="Số lượng mua"
 
-   <TextView
-       android:id="@+id/tenchitiet"
-       android:textColor="@color/black"
-       android:textSize="25dp"
-       android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-       android:layout_width="match_parent"
-       android:layout_height="70dp"/>
-   <TextView
-       android:id="@+id/giachitiet"
-       android:text="50.,000"
-       android:textSize="25dp"
-       android:textStyle="bold"
-       android:textColor="#FF0000"
-       android:layout_width="match_parent"
-       android:layout_height="70dp"/>
+             android:textColor="@color/black"
+             android:textStyle="bold" />
 
-   <LinearLayout
-       android:orientation="horizontal"
-       android:layout_width="200dp"
-       android:layout_height="60dp">
-      <TextView
-          android:text="Số lượng mua"
-          android:textStyle="bold"
-          android:textColor="@color/black"
-
-          android:layout_width="100dp"
-          android:layout_height="60dp"/>
-      <Spinner
-          android:id="@+id/spinner"
-          android:layout_width="100dp"
-          android:layout_height="60dp"/>
-   </LinearLayout>
-
-
+         <Spinner
+             android:id="@+id/spinner"
+             android:layout_width="100dp"
+             android:layout_height="60dp" />
+      </LinearLayout>
 
       <androidx.appcompat.widget.AppCompatButton
           android:id="@+id/btnthem"
-          android:background="@drawable/border_black_bottom"
-          android:layout_width="350dp"
+          android:background="#3F51B5"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
           android:text="+  Thêm vào giỏ hàng  +"
           android:textSize="20dp"
-          android:layout_marginTop="50dp"
-          android:layout_gravity="center"
           android:textAllCaps="false"
           android:textColor="@color/white"
-          android:layout_height="50dp"
-          tools:ignore="HardcodedText" />
+          tools:ignore="HardcodedText"
+          android:layout_alignParentBottom="true"
+          />
+   </RelativeLayout>
+
+
+
+
+
+
+
+
 
 </LinearLayout>

@@ -189,7 +189,6 @@ public class HomeFragment extends Fragment {
             @Override
             public void onErrorResponse(VolleyError volleyError) {
 
-                Toast.makeText(getContext(), volleyError.toString(), Toast.LENGTH_SHORT).show();
             }
         };
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(SERVER.sach,thanhcong ,thatbai );

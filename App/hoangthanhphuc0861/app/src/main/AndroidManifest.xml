@@ -22,20 +22,23 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".Fragment.fragmenta"
+            android:name=".Fragment.SearchFragment"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
-            android:name=".Fragment.fragmentb"
+            android:name=".Fragment.AccountFragment"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".Fragment.HomeFragment"
             android:exported="false">
